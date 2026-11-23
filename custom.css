@@ -24,3 +24,14 @@
 #resources .resource-card>p:not(.resource-password){grid-row:3;margin:0}
 #resources .resource-card>.button{grid-row:4;display:inline-flex;align-items:center;justify-content:center;justify-self:start;max-width:100%;min-height:44px;margin:8px 0 0;padding:11px 22px;font-size:13px;line-height:1.5;font-weight:650;text-align:center}
 #resources .resource-password{grid-row:5;margin:0;font-size:13px;line-height:24px}
+/* On-page class resources, account verification and survey. */
+#resources .resource-card{grid-template-rows:auto auto minmax(24px,1fr) auto}
+#resources .resource-pending{grid-row:4;display:flex;flex-direction:column;gap:8px;margin-top:8px;font-size:13px;font-weight:600;color:var(--muted)}
+#resources .account-actions{grid-row:4;display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+#resources .account-actions .button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin:0;padding:11px 18px;font-size:13px;line-height:1.5;text-align:center;font-weight:650}
+#resources .mailbox-button{background:#fff;border-color:var(--ink);color:var(--ink)}
+#resources .mailbox-button:hover{background:var(--ink);color:#fff}
+.survey-panel{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:40px;border:1px solid var(--ink);border-radius:22px;background:var(--ink);margin-bottom:24px;box-shadow:0 10px 28px #0b293d20}
+.survey-panel h2{margin-bottom:12px;font-size:34px;font-weight:700;color:#fff}.survey-panel p{margin-bottom:0;color:#d5e3ed}.survey-panel .kicker{margin-bottom:12px;color:#ffda2b;font-weight:700}
+.survey-pending{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;min-height:52px;padding:12px 26px;border-radius:999px;background:#ffda2b;color:#0b293d;font-size:17px;font-weight:700;white-space:nowrap}
+@media(max-width:767px){.survey-panel{flex-direction:column;align-items:flex-start;padding:28px 24px;gap:22px}.survey-panel h2{font-size:28px}.survey-pending{width:100%}.resource-pending{line-height:1.7}}
